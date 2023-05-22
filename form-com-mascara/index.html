@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulário</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="form">
+            <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <div class="titulo">
+                        <h1>Cadastro DEVs</h1>
+                    </div>
+
+                    <div class="dados">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" required placeholder="Name">
+
+                        <label>Sobrenome:</label>
+                        <input type="text" name="sobrenome" required placeholder="Lastname">
+
+                        <label>Email:</label>
+                        <input type="email" name="email" required placeholder="Email@gmail.com">
+                    
+                        <label>CPF:</label>
+                        <input id="cpf" type="text" name="cpf" required placeholder="XXX.XXX.XXX-XX" autocomplete="off" maxlength="14" onkeypress="formatar('###.###.###-##', this)">
+                    </div>
+
+                    <div class="area-preencher">
+                        <label style="white-space: nowrap">De qual lado da aplicação você desenvolve?</label><br>
+                        <input type="radio" name="profissao" value="front"> <span>FrontEnd</span> 
+                        <input type="radio" name="profissao" value="back"> <span>BackEnd</span> 
+                        <input type="radio" name="profissao" value="full"> <span>FullStack</span> <br><br>
+
+                        <label>Senioridade</label><br>
+                        <select>
+                            <option value="estagio"><span>Estagiário</span></option>
+                            <option value="junior">Júnior</option>
+                            <option value="plenor">Plenor</option>
+                            <option value="senior">Sênior</option>
+                        </select><br><br>
+
+                        <label>Selecione as tecnológias que utiliza:</label><br>
+                        <input type="checkbox" name="tecnologias" value="css3"><span>HTML5</span> 
+                        <input type="checkbox" name="tecnologias" value="html5"><span>CSS3</span> 
+                        <input type="checkbox" name="tecnologias" value="javascript"><span>JAVASCRIPT</span> 
+                        <input type="checkbox" name="tecnologias" value="react"><span>REACT</span> 
+                        <input type="checkbox" name="tecnologias" value="bootstrap"><span>BOOTSTRAP</span> 
+                        <input type="checkbox" name="tecnologias" value="mysql"><span>MYSQL</span><br>
+                    </div>
+
+                    <div class="feedback">
+                        <label style="white-space: nowrap">Conte me um pouco mais sobre suas experiências</label>
+                        <textarea cols="30" rows="10" spellcheck="true" maxlength="300">Digite as tecnológias que você saíba utilizar.</textarea><br>
+                    </div>
+
+                    <div class="btn-envia">
+                        <input type="submit" name="envia" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(233, 232, 232);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin-top: 10%;
+}
+
+fieldset {
+    padding: 20% 20% 20% 20%;
+    background: rgb(160, 199, 236);
+    border-radius: 10px;
+    margin-bottom: 7%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: -30%;
+    margin-bottom: 5%;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+.area-preencher {
+    margin-top: 7%;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.btn-envia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh;
+    margin-bottom: -30%;
+    padding-bottom: 10%;
+}
+
+input {
+    height: 23px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: black;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background: red;
+    transition: all 0.9s;
+}
+
+@media (max-width: 480px) {
+    .form {
+        margin-top: 33%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .form {
+        margin-top: 25%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .form {
+        margin-top: 20%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+    .form {
+        margin-top: 20%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .form {
+        margin-top: 15%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .form {
+        margin-top: 12%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+    .form {
+        margin-top: 11%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .form {
+        margin-top: 10%;
+    }
+
+    fieldset {
+        width: 400px;
+        padding-left: 7%;
+    }
+
+    .titulo {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+    form {
+        width: 50%;
+    }
+
+    fieldset {
+        margin-top: 4%;
+        padding-left: 14%;
+    }
+
+    .titulo {
+        padding-top: 2%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    label {
+        font-size: 60px;
+    }
+
+    span {
+        font-size: 55px;
+        margin-left: 1%;
+        padding-right: 3%;
+    }
+
+    input {
+        height: 90px;
+    }
+
+    input::placeholder {
+        font-size: 60px;
+    }
+
+    input[type="radio"] {
+        width: 40px;
+    }
+
+    input[type="checkbox"] {
+        width: 40px;
+    }
+
+    input[type="submit"] {
+        width: 500px;
+        height: 90px;
+        font-size: 50px;
+    }
+
+    textarea {
+        font-size: 50px;
+    }
+
+    .btn-envia {
+        margin-top: 5%;
+    }
+
+    select {
+        font-size: 50px;
+    }
+}
